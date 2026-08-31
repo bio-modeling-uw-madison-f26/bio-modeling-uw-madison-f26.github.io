@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import GameOfLife from "./game-of-life";
 
 export const metadata: Metadata = {
   title: "BME 603/606 | Fall 2026",
@@ -18,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased"><GameOfLife />{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
