@@ -60,5 +60,12 @@
     "wrangler": "4.92.0"
   },
   "type": "module",
-  "displayName": "BME 603/606: Computational Methods for Biological Modeling and Simulation"
+  "displayName": "BME 603/606: Computational Methods for Biological Modeling and Simulation",
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "sharp@0.34.5": true,
+    "unrs-resolver@1.11.1": true,
+    "workerd@1.20260515.1": true,
+    "esbuild@0.28.0": true
+  }
 }

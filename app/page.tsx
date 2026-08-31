@@ -32,7 +32,7 @@ export default function Home() {
         <div className="section-heading"><div><h2>Lecture schedule</h2><p>Topics and materials will be added as the semester progresses.</p></div><a className="calendar-link" href="https://secfac.wisc.edu/academic-calendar/#2026-2027" target="_blank" rel="noreferrer">Academic calendar ↗</a></div>
         <div className="table-wrap"><table><thead><tr><th>Date</th><th>Topic</th><th>Notes &amp; resources</th><th>Exercises &amp; activities</th></tr></thead><tbody>
           {meetings.map((m) => <tr key={m.date} className={m.noClass ? "no-class" : ""}><th scope="row">{m.date}</th><td>{m.topic || <span className="placeholder">To be announced</span>}</td><td>{m.noClass ? "—" : resources(m.notes)}</td><td>{m.noClass ? "—" : resources(m.activities)}</td></tr>)}
-        </tbody></table></div><p className="schedule-note">Thanksgiving recess is Nov 26–29. It does not remove a Monday or Wednesday meeting.</p>
+        </tbody></table></div><p className="schedule-note">Thanksgiving recess is Nov 26–29.</p>
       </section>
 
       <section id="assignments" className="content-section"><div className="section-heading"><div><h2>Assignments</h2><p>Assignment materials and links will appear here as they are released.</p></div></div><div className="assignment-list">
