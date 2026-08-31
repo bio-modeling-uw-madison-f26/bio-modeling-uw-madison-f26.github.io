@@ -1,4 +1,5 @@
 import { assignments, grading, meetings } from "./course-data";
+import NavLinks from "./nav-links";
 
 const resources = (items?: { label: string; url: string }[]) =>
   items?.length ? (
@@ -22,13 +23,7 @@ export default function Home() {
             <img src="/course-logo.png" alt="" />
             <span>BME 603/606</span>
           </a>
-          <nav aria-label="Course sections">
-            <a href="#about">About</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#assignments">Assignments</a>
-            <a href="#grading">Grading</a>
-            <a href="#policies">Policies</a>
-          </nav>
+          <NavLinks />
         </div>
       </header>
       <div className="page-shell">
