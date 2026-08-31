@@ -1,5 +1,5 @@
 import { assignments, grading, meetings } from "./course-data";
-import NavLinks from "./nav-links";
+import NavLinks, { BackToTop } from "./nav-links";
 
 const resources = (items?: { label: string; url: string }[]) =>
   items?.length ? (
@@ -116,6 +116,17 @@ export default function Home() {
                 <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
               </svg>
               Canvas
+            </a>
+            <a
+              className="about-link"
+              href="https://teams.microsoft.com/l/team/19%3A8LxlpEQFx-jlu_2xrmmq4IcFnlHmTJY3-MWe-9iZ-mQ1%40thread.tacv2/conversations?groupId=d5b9e81b-1a51-44f5-ab43-77863b144bc8&tenantId=2ca68321-0eda-4908-88b2-424a8cb4b0f9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.625 5.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0zM24 10.5v6a1.5 1.5 0 0 1-3 0v-6a1.5 1.5 0 0 1 3 0zm-5.25 0v7.875A2.625 2.625 0 0 1 16.125 21H13.5v-3h1.875v-7.5H13.5V7.5h3.375A2.625 2.625 0 0 1 19.5 9v1.5h-.75zM9.375 3.75a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0zM12 9.75v9A2.25 2.25 0 0 1 9.75 21h-4.5A2.25 2.25 0 0 1 3 18.75v-9A2.25 2.25 0 0 1 5.25 7.5h4.5A2.25 2.25 0 0 1 12 9.75z"/>
+              </svg>
+              MS Teams
             </a>
           </aside>
         </section>
@@ -275,7 +286,7 @@ export default function Home() {
           <span>
             Last modified August 31, 2026 · <a href="/changelog">Changelog</a>
           </span>
-          <a href="#top">Back to top ↑</a>
+          <BackToTop />
         </div>
       </footer>
     </main>

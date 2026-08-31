@@ -19,3 +19,17 @@ export default function NavLinks() {
     </nav>
   );
 }
+
+export function BackToTop() {
+  const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.history.pushState(null, "", "#top");
+  };
+
+  return (
+    <a href="#top" onClick={scrollToTop}>
+      Back to top ↑
+    </a>
+  );
+}
