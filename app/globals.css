@@ -381,8 +381,26 @@ footer a {
 }
 .resource-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px 14px;
+  flex-direction: column;
+  gap: 5px;
+}
+.resource-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.resource-links a::after {
+  content: " ↗";
+  font-size: 11px;
+  opacity: 0.75;
+}
+.resource-links a:hover {
+  color: var(--navy);
+  text-decoration: underline;
 }
 .assignment-list {
   border-top: 3px solid var(--navy);

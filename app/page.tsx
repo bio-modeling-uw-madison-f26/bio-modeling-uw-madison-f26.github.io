@@ -38,7 +38,7 @@ export default function Home() {
               Biological Modeling &amp; Simulation
             </h1>
             <p className="lede">
-              A hands-on course in building, simulating, and interpreting
+              A <strong>hands-on</strong> course in building, simulating, and interpreting
               computational models of biological systems.
             </p>
           </div>

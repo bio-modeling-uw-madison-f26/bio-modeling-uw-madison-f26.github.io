@@ -8,7 +8,18 @@ export type Meeting = {
 
 // Edit this file to update the schedule. Add label/URL pairs for any links.
 export const meetings: Meeting[] = [
-  { date: "Wed, Sep 2", topic: "Course Overview" },
+  {
+    date: "Wed, Sep 2",
+    topic: "Course Overview",
+    notes: [
+      { label: "W3S Git Tutorial", url: "https://www.w3schools.com/git/default.asp" },
+      { label: "Getting started with VS Code", url: "https://code.visualstudio.com/docs/editing/getting-started/editor-tutorial" },
+    ],
+    activities: [
+      { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/09-02-in-class/" },
+      { label: "Survey", url: "https://docs.google.com/forms/d/e/1FAIpQLSdNIT3zH2eyfAPe0EUG4_K0YFSUhMy2niN9R3PEUR7G_JEDxQ/viewform?usp=publish-editor" },
+    ],
+  },
   { date: "Mon, Sep 7", topic: "Labor Day — no instruction", noClass: true },
   { date: "Wed, Sep 9" },
   { date: "Mon, Sep 14" },
@@ -36,7 +47,7 @@ export const meetings: Meeting[] = [
   { date: "Mon, Nov 30" },
   { date: "Wed, Dec 2" },
   { date: "Mon, Dec 7" },
-  { date: "Wed, Dec 9", topic: "Last class" },
+  { date: "Wed, Dec 9", topic: "Project Presentations" },
 ];
 
 export const grading = [
