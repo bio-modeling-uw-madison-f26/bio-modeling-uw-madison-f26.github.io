@@ -211,10 +211,17 @@ export default function Home() {
 
         <section id="grading" className="content-section two-column">
           <div>
-            <h2>Grading</h2>
+            <h2>Grading and Course Policies</h2>
             <p className="muted">
-              The planned course grade is composed of the following items.
-              Details are subject to refinement.
+              Please refer to the course{" "}
+              <a
+                href="https://drive.google.com/file/d/1SLo5rkmpnM_xMmjId80x3-q261My6pC3/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                syllabus
+              </a>
+              .
             </p>
           </div>
           <dl className="grade-list">
@@ -231,53 +238,6 @@ export default function Home() {
           </dl>
         </section>
 
-        <section id="policies" className="content-section">
-          <h2>Course policies</h2>
-          <div className="policy-list">
-            <article>
-              <h3>Submitting work</h3>
-              <p>
-                Submit assignments through Gradescope as PDF files by the posted
-                deadlines.
-              </p>
-            </article>
-            <article>
-              <h3>Collaboration</h3>
-              <p>
-                Discussion and collaboration on ideas are encouraged. Submitted
-                code and reports must be your own work.
-              </p>
-            </article>
-            <article>
-              <h3>Generative AI</h3>
-              <p>
-                Generative AI tools may be used for debugging or clarification
-                only and must be cited.
-              </p>
-            </article>
-            <article>
-              <h3>Academic integrity</h3>
-              <p>
-                Students are expected to uphold UW–Madison standards of academic
-                integrity.
-              </p>
-            </article>
-            <article>
-              <h3>Late work</h3>
-              <p>
-                Life happens. Contact the instructional team as early as
-                possible when circumstances affect your work.
-              </p>
-            </article>
-            <article>
-              <h3>Accessibility &amp; well-being</h3>
-              <p>
-                Contact the McBurney Disability Resource Center early for
-                accommodations. UHS provides confidential mental health support.
-              </p>
-            </article>
-          </div>
-        </section>
       </div>
       <footer>
         <div className="footer-inner">

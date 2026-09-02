@@ -14,8 +14,7 @@ export default function NavLinks() {
       <a href="#about" onClick={scrollTo("about")}>About</a>
       <a href="#schedule" onClick={scrollTo("schedule")}>Schedule</a>
       <a href="#assignments" onClick={scrollTo("assignments")}>Assignments</a>
-      <a href="#grading" onClick={scrollTo("grading")}>Grading</a>
-      <a href="#policies" onClick={scrollTo("policies")}>Policies</a>
+      <a href="#grading" onClick={scrollTo("grading")}>Grading &amp; Policies</a>
     </nav>
   );
 }

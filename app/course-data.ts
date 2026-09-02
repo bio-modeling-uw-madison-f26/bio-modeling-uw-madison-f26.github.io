@@ -12,6 +12,7 @@ export const meetings: Meeting[] = [
     date: "Wed, Sep 2",
     topic: "Course Overview",
     notes: [
+      { label: "Syllabus", url: "https://drive.google.com/file/d/1SLo5rkmpnM_xMmjId80x3-q261My6pC3/view?usp=sharing" },
       { label: "W3S Git Tutorial", url: "https://www.w3schools.com/git/default.asp" },
       { label: "Getting started with VS Code", url: "https://code.visualstudio.com/docs/editing/getting-started/editor-tutorial" },
     ],
