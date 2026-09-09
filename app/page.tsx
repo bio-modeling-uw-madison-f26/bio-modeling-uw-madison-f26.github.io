@@ -163,7 +163,20 @@ export default function Home() {
                   <tr key={m.date} className={m.noClass ? "no-class" : ""}>
                     <th scope="row">{m.date}</th>
                     <td>
-                      {m.topic || (
+                      {m.topic ? (
+                        <>
+                          {m.topic}
+                          {m.topicLinks?.length ? (
+                            <div className="resource-links topic-links">
+                              {m.topicLinks.map((link) => (
+                                <a key={link.url} href={link.url} target="_blank" rel="noreferrer">
+                                  {link.label}
+                                </a>
+                              ))}
+                            </div>
+                          ) : null}
+                        </>
+                      ) : (
                         <span className="placeholder">To be announced</span>
                       )}
                     </td>

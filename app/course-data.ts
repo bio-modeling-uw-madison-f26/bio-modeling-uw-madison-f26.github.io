@@ -1,6 +1,7 @@
 export type Meeting = {
   date: string;
   topic?: string;
+  topicLinks?: { label: string; url: string }[];
   notes?: { label: string; url: string }[];
   activities?: { label: string; url: string }[];
   noClass?: boolean;
@@ -11,18 +12,33 @@ export const meetings: Meeting[] = [
   {
     date: "Wed, Sep 2",
     topic: "Course Overview",
-    notes: [
+    topicLinks: [
       { label: "Syllabus", url: "https://drive.google.com/file/d/1SLo5rkmpnM_xMmjId80x3-q261My6pC3/view?usp=sharing" },
+    ],
+    notes: [
       { label: "W3S Git Tutorial", url: "https://www.w3schools.com/git/default.asp" },
       { label: "Getting started with VS Code", url: "https://code.visualstudio.com/docs/editing/getting-started/editor-tutorial" },
     ],
     activities: [
-      { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/09-02-in-class/" },
       { label: "Survey", url: "https://docs.google.com/forms/d/e/1FAIpQLSdNIT3zH2eyfAPe0EUG4_K0YFSUhMy2niN9R3PEUR7G_JEDxQ/viewform?usp=publish-editor" },
     ],
   },
   { date: "Mon, Sep 7", topic: "Labor Day — no instruction", noClass: true },
-  { date: "Wed, Sep 9" },
+  {
+    date: "Wed, Sep 9",
+    topic: "Python Programming Fundamentals",
+    topicLinks: [
+      { label: "PDF", url: "https://drive.google.com/file/d/1rZv-5v69zPeolqEwGNk9UFugIhAfpi4w/view?usp=drive_link" },
+      { label: "PPT", url: "https://docs.google.com/presentation/d/1JrDGpQEleWnou_HU9YoG25XFNi12dLgA/edit?usp=drive_link&ouid=116154183097190571698&rtpof=true&sd=true" },
+    ],
+    notes: [
+      { label: "W3S Python Reference", url: "https://www.w3schools.com/python/python_reference.asp" },
+    ],
+    activities: [
+      { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/09-09-in-class" },
+      { label: "Reflection (due 11:59 pm, Wed, Sept 9)", url: "https://forms.gle/MCzRbpq1LoGvfEeC7" },
+    ],
+  },
   { date: "Mon, Sep 14" },
   { date: "Wed, Sep 16" },
   { date: "Mon, Sep 21" },

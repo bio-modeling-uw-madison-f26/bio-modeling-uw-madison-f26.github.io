@@ -569,3 +569,9 @@ footer a {
     margin-bottom: 0;
   }
 }
+
+.topic-links {
+  margin-top: 6px;
+  flex-direction: row;
+  gap: 10px;
+}
