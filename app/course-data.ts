@@ -39,7 +39,14 @@ export const meetings: Meeting[] = [
       { label: "Reflection (due 11:59 pm, Wed, Sept 9)", url: "https://forms.gle/MCzRbpq1LoGvfEeC7" },
     ],
   },
-  { date: "Mon, Sep 14" },
+  {
+    date: "Mon, Sep 14",
+    topic: "Matrix Methods and Version Control",
+    topicLinks: [
+      { label: "PDF", url: "https://drive.google.com/file/d/1NhT4oUyXE2iEFjmchi6yfC5kDiy_w5Q_/view?usp=sharing" },
+      { label: "PPT", url: "https://docs.google.com/presentation/d/1o6AOtFty7yrxHP8gkLHhy0PQC5MQL2Fs/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
+    ],
+  },
   { date: "Wed, Sep 16" },
   { date: "Mon, Sep 21" },
   { date: "Wed, Sep 23" },
