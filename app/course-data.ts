@@ -59,6 +59,9 @@ export const meetings: Meeting[] = [
     notes: [
       { label: "Data Science Cheat Sheets", url: "https://adibro.github.io/Data-Science-Resources/Cheat-Sheets/" },
     ],
+    activities: [
+      { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/09-16-in-class" },
+    ],
   },
   { date: "Mon, Sep 21" },
   { date: "Wed, Sep 23" },
