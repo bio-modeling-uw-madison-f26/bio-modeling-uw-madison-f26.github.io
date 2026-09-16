@@ -16,7 +16,6 @@ export const meetings: Meeting[] = [
       { label: "Syllabus", url: "https://drive.google.com/file/d/1SLo5rkmpnM_xMmjId80x3-q261My6pC3/view?usp=sharing" },
     ],
     notes: [
-      { label: "W3S Git Tutorial", url: "https://www.w3schools.com/git/default.asp" },
       { label: "Getting started with VS Code", url: "https://code.visualstudio.com/docs/editing/getting-started/editor-tutorial" },
     ],
     activities: [
@@ -46,8 +45,21 @@ export const meetings: Meeting[] = [
       { label: "PDF", url: "https://drive.google.com/file/d/1NhT4oUyXE2iEFjmchi6yfC5kDiy_w5Q_/view?usp=sharing" },
       { label: "PPT", url: "https://docs.google.com/presentation/d/1o6AOtFty7yrxHP8gkLHhy0PQC5MQL2Fs/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
     ],
+    notes: [
+      { label: "W3S Git Tutorial", url: "https://www.w3schools.com/git/default.asp" },
+    ],
   },
-  { date: "Wed, Sep 16" },
+  {
+    date: "Wed, Sep 16",
+    topic: "Interpolation and Least Squares",
+    topicLinks: [
+      { label: "PDF", url: "https://drive.google.com/file/d/17ssmD4HdIGUvHwxS5-CLOiqXvAP_4qDc/view?usp=sharing" },
+      { label: "PPT", url: "https://docs.google.com/presentation/d/1OY0xt4_WG5Hr3cReAH1MUeZNgpXe0QKv/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
+    ],
+    notes: [
+      { label: "Data Science Cheat Sheets", url: "https://adibro.github.io/Data-Science-Resources/Cheat-Sheets/" },
+    ],
+  },
   { date: "Mon, Sep 21" },
   { date: "Wed, Sep 23" },
   { date: "Mon, Sep 28" },
@@ -85,7 +97,7 @@ export const grading = [
 export const assignments = [
   {
     title: "Assignment 1: Allometric Scaling",
-    releaseDate: "September 14, 2026",
+    releaseDate: "September 17, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",
