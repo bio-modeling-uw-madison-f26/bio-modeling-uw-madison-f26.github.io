@@ -73,6 +73,9 @@ export const meetings: Meeting[] = [
     notes: [
       { label: "Python Numerical Methods", url: "https://pythonnumericalmethods.studentorg.berkeley.edu/" },
     ],
+    activities: [
+      { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/09-21-in-class" },
+    ],
   },
   { date: "Wed, Sep 23" },
   { date: "Mon, Sep 28" },
