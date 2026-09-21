@@ -125,7 +125,7 @@ h1 {
 }
 .course-facts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid var(--line);
 }
 .course-facts > div {
@@ -321,7 +321,7 @@ footer a {
   .course-facts {
     grid-template-columns: repeat(2, 1fr);
   }
-  .course-facts > div:nth-child(2) {
+  .course-facts > div:nth-child(3) {
     border-right: 0;
   }
   .course-facts > div:first-child {
@@ -574,4 +574,17 @@ footer a {
   margin-top: 6px;
   flex-direction: row;
   gap: 10px;
+}
+
+
+.course-facts-where {
+  margin-top: 12px;
+}
+.office-hours-heading {
+  margin-top: 12px;
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }

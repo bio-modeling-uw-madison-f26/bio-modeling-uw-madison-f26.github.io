@@ -63,7 +63,17 @@ export const meetings: Meeting[] = [
       { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/09-16-in-class" },
     ],
   },
-  { date: "Mon, Sep 21" },
+  {
+    date: "Mon, Sep 21",
+    topic: "Numerical Differentiation",
+    topicLinks: [
+      { label: "PDF", url: "https://drive.google.com/file/d/1idD76T91BnbMl-7LlIixsEbkZ3G9zbEY/view?usp=sharing" },
+      { label: "PPT", url: "https://docs.google.com/presentation/d/1pAcMcb0wtjfK7LYrNOfOCxi_8nIF6VHY/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
+    ],
+    notes: [
+      { label: "Python Numerical Methods", url: "https://pythonnumericalmethods.studentorg.berkeley.edu/" },
+    ],
+  },
   { date: "Wed, Sep 23" },
   { date: "Mon, Sep 28" },
   { date: "Wed, Sep 30" },
@@ -100,7 +110,14 @@ export const grading = [
 export const assignments = [
   {
     title: "Assignment 1: Allometric Scaling",
-    releaseDate: "September 17, 2026",
+    releaseDate: "September 21, 2026",
+    description:
+      "Assignment materials and submission details will be posted here when released.",
+    url: "",
+  },
+  {
+    title: "Assignment 2: Directed Evolution",
+    releaseDate: "October 5, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",

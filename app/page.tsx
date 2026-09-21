@@ -51,14 +51,10 @@ export default function Home() {
 
         <section className="course-facts" aria-label="Course information">
           <div>
-            <span>When</span>
+            <span>When &amp; where</span>
             <strong>Monday &amp; Wednesday</strong>
             <small>2:30–3:45 PM</small>
-          </div>
-          <div>
-            <span>Where</span>
-            <strong>MECH ENGR 1152</strong>
-            <small>Sep 2–Dec 9, 2026</small>
+            <strong className="course-facts-where">MECH ENGR 1152</strong>
           </div>
           <div>
             <span>Instructor</span>
@@ -66,11 +62,17 @@ export default function Home() {
             <a href="mailto:dhananjay.bhaskar@wisc.edu">
               dhananjay.bhaskar@wisc.edu
             </a>
+            <span className="office-hours-heading">Office hours</span>
+            <small>Thu, 4–5 pm · ECB 2139</small>
+            <small>Fri, 10–11 am · ECB 2139</small>
           </div>
           <div>
             <span>Teaching assistant</span>
             <strong>Colin Mikulski</strong>
             <a href="mailto:cmikulski@wisc.edu">cmikulski@wisc.edu</a>
+            <span className="office-hours-heading">Office hours</span>
+            <small>Mon, 1–2 pm · TBD (see MS Teams)</small>
+            <small>Tue, 2–3 pm · TBD (see MS Teams)</small>
           </div>
         </section>
 
