@@ -84,6 +84,9 @@ export const meetings: Meeting[] = [
       { label: "PDF", url: "https://drive.google.com/file/d/1ece2ZOqnBhlHjz2gm8-WP5CAHfbl1b61/view?usp=sharing" },
       { label: "PPT", url: "https://docs.google.com/presentation/d/1Gkt99o-APuYq2xe1NAiX02F6etKB8M7n/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
     ],
+    activities: [
+      { label: "In-class Exercise (optional, extra credit)", url: "https://github.com/bio-modeling-uw-madison-f26/09-23-in-class-bonus" },
+    ],
   },
   { date: "Mon, Sep 28" },
   { date: "Wed, Sep 30" },
