@@ -216,9 +216,15 @@ export default function Home() {
                       assignment.title
                     )}
                   </h3>
-                  <p>{assignment.description}</p>
+                  {assignment.description && <p>{assignment.description}</p>}
                 </div>
-                <span className="status">Coming soon</span>
+                {assignment.url ? (
+                  <a className="status status-link" href={assignment.url}>
+                    {assignment.dueDate ?? "View assignment"}
+                  </a>
+                ) : (
+                  <span className="status">Coming soon</span>
+                )}
               </article>
             ))}
           </div>

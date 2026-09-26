@@ -124,7 +124,8 @@ export const assignments = [
   {
     title: "Assignment 1: Allometric Scaling",
     releaseDate: "September 25, 2026",
-    description: "Due: October 5, 2026",
+    description: "",
+    dueDate: "Due Oct 5, 2026",
     url: "/assignments/assignment1.html",
   },
   {
