@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BME 603/606 Assignment 1: Allometric Scaling">
+  <title>Assignment 1: Allometric Scaling | BME 603/606</title>
+  <style>
+    :root { --navy:#073b68; --navy-dark:#052946; --teal:#1e9a98; --red:#df001b; --ink:#17222d; --muted:#60707d; --paper:#fbfcfc; --line:#d9e2e7; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.68 "Red Hat Text",system-ui,sans-serif; }
+    h1,h2,h3 { font-family:"Red Hat Display",system-ui,sans-serif; color:var(--navy-dark); line-height:1.18; }
+    h1 { font-size:clamp(38px,6vw,64px); letter-spacing:-.035em; margin:0 0 18px; }
+    h2 { font-size:32px; margin:0 0 14px; }
+    h3 { font-size:26px; margin:0 0 15px; }
+    a { color:var(--navy); text-underline-offset:3px; }
+    a:hover { color:var(--red); }
+    a:focus-visible { outline:3px solid var(--teal); outline-offset:3px; }
+    header { border-bottom:1px solid var(--line); background:#fff; }
+    .header-inner { max-width:1040px; padding:17px 26px; margin:auto; display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-family:"Red Hat Display",system-ui,sans-serif; font-weight:700; font-size:19px; color:var(--navy-dark); text-decoration:none; }
+    .back { font-size:14px; font-weight:600; }
+    main { max-width:1040px; padding:0 26px 88px; margin:auto; }
+    .hero { padding:64px 0 48px; border-bottom:5px solid var(--navy); }
+    .eyebrow { color:var(--red); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.12em; margin:0 0 16px; }
+    .lede { color:#526370; font-size:19px; max-width:780px; margin:0; }
+    section { padding:35px 0 10px; scroll-margin-top:24px; }
+    p { margin:0 0 14px; }
+    .intro { max-width:100%; }
+    .problem { background:white; border:1px solid var(--line); padding:26px 30px; margin:25px 0; break-inside:avoid; }
+    .problem ol { padding-left:1.55em; margin:12px 0; }
+    .problem li { padding-left:.25em; margin:10px 0; }
+    .formula { background:#f2f6f8; border:1px solid var(--line); padding:12px 16px; margin:15px 0; overflow-x:auto; font-size:1.06rem; white-space:nowrap; }
+    .table-wrap { max-width:680px; overflow-x:auto; border:1px solid var(--line); margin:17px auto; }
+    table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+    th,td { padding:9px 15px; border-bottom:1px solid var(--line); text-align:right; }
+    th:first-child,td:first-child { text-align:left; }
+    thead { background:var(--navy); color:white; }
+    tbody tr:nth-child(even) { background:#f5fafa; }
+    tbody tr:last-child td { border-bottom:0; }
+    .grad { border-top:5px solid var(--navy); margin-top:34px; }
+    .grad .problem { border-left:4px solid var(--navy); }
+    .grad-label { font-family:"Red Hat Display",system-ui,sans-serif; font-weight:700; font-size:22px; color:var(--navy-dark); margin:0 0 10px; }
+    .hint { border-left:4px solid var(--teal); background:#edf8f7; padding:13px 17px; margin:17px 0; }
+    .hint p:last-child { margin-bottom:0; }
+    footer { border-top:1px solid var(--line); padding:25px; text-align:center; font-size:13px; color:var(--muted); }
+    @media(max-width:600px) { .hero{padding:46px 0 35px} .problem{padding:20px} h2{font-size:28px} h3{font-size:22px} }
+    @media print { body{background:white} main{padding-bottom:10px} .back{display:none} a{color:inherit} .problem{break-inside:avoid} .hero{padding-top:28px} }
+  </style>
+</head>
+<body>
+  <header><div class="header-inner"><a class="brand" href="https://bio-modeling-uw-madison-f26.github.io/">BME 603/606</a><a class="back" href="https://bio-modeling-uw-madison-f26.github.io/">Course Website</a></div></header>
+  <main>
+    <div class="hero"><p class="eyebrow">Computational Methods for Biological Modeling &amp; Simulation · Fall 2026</p><h1>Assignment 1:<br>Allometric Scaling</h1><p class="lede">How does a biological quantity change as an organism gets larger?</p></div>
+
+    <section id="before" class="intro"><h2>Before you begin</h2><p>An allometric model relates a measured biological quantity <i>B</i> — such as metabolic rate, heart rate, or limb length — to body mass <i>M</i>. These models are important because they reveal how biological form and function scale across organisms of vastly different sizes, from a shrew to a whale, and help us predict unmeasured quantities, understand energy budgets, and connect structure to function. In this assignment you will fit, compare, and differentiate such models using the tools from class.</p><p>Mathematically, an allometric law can be expressed as:</p><div class="formula" role="math" aria-label="B of M equals a times M to the b">B(M) = aM<sup>b</sup>, &nbsp; M &gt; 0.</div><p>Here <i>a</i> sets the scale and <i>b</i> is the allometric exponent.</p></section>
+
+    <section id="data"><h2>Dataset: metabolic rate and body mass</h2><p>Use the following <strong>toy data</strong> throughout Problems 1–3. These measurements are illustrative, not measurements from a particular species. Body mass is in kg and metabolic rate is in watts (W).</p><div class="table-wrap"><table><thead><tr><th scope="col">Observation</th><th scope="col">Body mass <i>M</i> (kg)</th><th scope="col">Metabolic rate <i>B</i> (W)</th></tr></thead><tbody><tr><td>1</td><td>0.10</td><td>2.0</td></tr><tr><td>2</td><td>0.20</td><td>3.5</td></tr><tr><td>3</td><td>0.40</td><td>5.5</td></tr><tr><td>4</td><td>0.80</td><td>9.4</td></tr><tr><td>5</td><td>1.60</td><td>15.2</td></tr><tr><td>6</td><td>3.20</td><td>26.3</td></tr><tr><td>7</td><td>6.40</td><td>41.8</td></tr><tr><td>8</td><td>12.80</td><td>71.4</td></tr></tbody></table></div></section>
+
+    <section id="core">
+      <article class="problem"><h3>Problem 1</h3><p>Implement the Lagrange interpolating polynomial in Python that passes through all eight data points.</p><ol type="a"><li>Plot the raw data as points and the interpolant as a smooth curve over the range 0.05 to 14 kg. Use enough points (say, 500) so the curve looks smooth.</li><li>Use the interpolant to estimate <i>B</i> at <i>M</i> = 0.30, 1.20, and 5.00 kg. Report each value.</li><li>Also evaluate the interpolant at some large values of <i>M</i>, for example <i>M</i> = 20, 50, and 100 kg. Report those values. Do we trust those results? Explain why or why not.</li></ol></article>
+
+      <article class="problem"><h3>Problem 2</h3><ol type="a"><li>Take the natural logarithm of both <i>M</i> and <i>B</i>. Plot log <i>B</i> against log <i>M</i>. Does the relationship look linear?</li><li>Fit log <i>B</i><sub>i</sub> = <i>c</i> + <i>b</i> log <i>M</i><sub>i</sub> by least squares using all eight observations. Write your 8 × 2 design matrix <i>X</i>. Report the fitted values of <i>c</i> and <i>b</i>, and then compute <i>a</i> = exp(<i>c</i>). Give the fitted power law with units.</li><li>Plot two figures: (i) the log-log data with the least-squares line, and (ii) the original-scale data with the fitted power law <i>B</i>(<i>M</i>) = <i>aM</i><sup><i>b</i></sup> as a smooth curve.</li><li>Use your fitted model to estimate <i>B</i> at <i>M</i> = 0.30, 1.20, and 5.00 kg — the same masses you used in Problem 1. Compare these values with the interpolant values from Problem 1. Which results do you trust more for estimating <i>B</i> at an unmeasured mass: the interpolant or the least-squares fit? Explain your reasoning in terms of noise, overfitting, and the biological trend.</li></ol><aside class="hint"><p><strong>Hint:</strong> Each row of <i>X</i> is [1, log <i>M</i><sub>i</sub>]. Use <code>np.linalg.lstsq(X, y, rcond=None)</code> where <code>y</code> is the vector of log <i>B</i><sub>i</sub>. Convert predictions back to watts before interpreting them.</p></aside></article>
+
+      <article class="problem"><h3>Problem 3</h3><ol type="a"><li>Using the Lagrange interpolant from Problem 1, compute the numerical derivative at 500 equally spaced points between <i>M</i> = 0 and <i>M</i> = 15 kg using a central difference with a small step <i>h</i> (e.g., <i>h</i> = 0.01). Plot d<i>B</i>/d<i>M</i> versus <i>M</i> for the interpolant. Describe the shape of the derivative curve. Does it look smooth? Does it show oscillations?</li><li>Repeat part (a) using the least-squares power law <i>B</i>(<i>M</i>) = <i>aM</i><sup><i>b</i></sup> with your fitted values of <i>a</i> and <i>b</i>. Plot the numerical derivative on the same axes or a separate figure.</li><li>Compute the analytical derivative of the least-squares fit: <i>B</i>′(<i>M</i>) = <i>abM</i><sup><i>b</i>−1</sup>. Plot this analytical derivative over the same range. Compare it with the numerical derivative from part (b). Plot the difference between the two derivatives.</li><li>Interpret what d<i>B</i>/d<i>M</i> means in this biological context. What are its units? What does a positive, increasing derivative say about how metabolic rate changes as body mass increases?</li></ol><aside class="hint"><p><strong>Hint:</strong> Use the central difference formula <i>B</i>′(<i>M</i>) ≈ [<i>B</i>(<i>M</i> + <i>h</i>) − <i>B</i>(<i>M</i> − <i>h</i>)] / (2<i>h</i>).</p></aside></article>
+    </section>
+
+    <section id="graduate" class="grad"><p class="grad-label">Graduate students only</p>
+      <article class="problem"><h3>Problem 4</h3><p><a href="https://repository.library.noaa.gov/view/noaa/52363/noaa_52363_DS1.pdf">A published study</a> of California horn sharks reports allometric exponents of approximately 0.966 for resting metabolic rate and 1.073 for maximum metabolic rate. Gill area has exponent approximately 0.564 below 0.203 kg and approximately 1.012 above 0.203 kg. Treat these reported exponents as fixed values for this exercise; the measured relationships also have uncertainty.</p><ol type="a"><li>Let resting demand be <i>R</i> = <i>rM</i><sup>0.966</sup>, maximum demand be <i>Q</i> = <i>qM</i><sup>1.073</sup>, and gill area be <i>G</i> = <i>gM</i><sup><i>p</i></sup>, with positive constants. Derive the mass exponents of <i>G/R</i> and <i>G/Q</i> for each reported gill-area regime. That is, for each regime, find the exponent <i>e</i> such that <i>G/R</i> ∝ <i>M</i><sup><i>e</i></sup> and <i>G/Q</i> ∝ <i>M</i><sup><i>e</i></sup>.</li><li>For each regime, state whether each ratio rises or falls as mass increases. For a tenfold increase in mass <em>within each regime</em>, calculate the multiplicative change in <i>G/Q</i>.</li><li>Using Python, plot <i>G/R</i> and <i>G/Q</i> versus <i>M</i> on a log-log plot from <i>M</i> = 0.01 kg to <i>M</i> = 10 kg, using the appropriate gill-area exponent for each mass. Assume <i>r</i> = <i>q</i> = <i>g</i> = 1 for the plot (since the constants cancel in the ratio). Describe what happens at the 0.203 kg breakpoint.</li><li>Explain one reason that comparing fitted exponents alone cannot establish that gill area physically limits metabolic rate. In particular, consider uncertainty and what a surface-area argument assumes about biological structure.</li></ol></article>
+
+      <article class="problem"><h3>Problem 5</h3><p>Suppose metabolic power <i>Y</i> provides maintenance and growth:</p><div class="formula" role="math" aria-label="Y equals Y c times N plus E c times d N d t">Y = Y<sub>c</sub>N + E<sub>c</sub> dN/dt.</div><p>Here <i>N</i> is cell number, <i>Y</i><sub>c</sub> is maintenance power per cell, <i>E</i><sub>c</sub> is the energy needed to make one cell, and each cell has mass <i>M</i><sub>c</sub>. Assume positive constants and <i>Y</i> = <i>aM</i><sup>3/4</sup> with <i>M</i> = <i>M</i><sub>c</sub><i>N</i>.</p><ol type="a"><li>Eliminate <i>N</i> to show that d<i>M</i>/d<i>t</i> = (<i>aM</i><sub>c</sub>/<i>E</i><sub>c</sub>)<i>M</i><sup>3/4</sup> − (<i>Y</i><sub>c</sub>/<i>E</i><sub>c</sub>)<i>M</i>. Check units of both terms.</li><li>Set d<i>M</i>/d<i>t</i> = 0 to derive the positive equilibrium mass <i>M</i><sub>max</sub>. Explain the direction of growth just below and just above this mass.</li><li>For initial mass 0 &lt; <i>M</i>(0) = <i>M</i><sub>0</sub> &lt; <i>M</i><sub>max</sub>, substitute <i>u</i> = <i>M</i><sup>1/4</sup>. Derive a linear differential equation for <i>u</i>, solve it, and transform back to an explicit formula for <i>M</i>(<i>t</i>). Verify the initial value and limiting mass.</li><li>Choose numerical values for the constants so that <i>M</i><sub>max</sub> = 10 kg and <i>Y</i><sub>c</sub>/<i>E</i><sub>c</sub> = 0.5 per unit time. (For example, let <i>Y</i><sub>c</sub>/<i>E</i><sub>c</sub> = 0.5 and solve for the remaining combination.) Solve the differential equation numerically using <code>scipy.integrate.solve_ivp</code> or a simple Euler method for three initial masses: <i>M</i><sub>0</sub> = 0.1, 1.0, and 5.0 kg. Plot <i>M</i>(<i>t</i>)/<i>M</i><sub>max</sub> against dimensionless time τ = <i>Y</i><sub>c</sub><i>t</i>/(4<i>E</i><sub>c</sub>) for each initial condition on the same axes. Compare their shapes. Does the model predict finite-time arrival at <i>M</i><sub>max</sub>?</li><li>Compare your numerical solutions with the analytical formula from part (c). Do they agree? Plot both for one initial condition to check.</li></ol></article>
+    </section>
+
+    <section id="submission"><h2>Submission Instructions</h2><p>Create a single PDF file containing all your code, plots, numerical results, and written answers to the questions. In all plots, please label axes and include units. We will provide submission instructions soon (via GitHub).</p></section>
+  </main>
+  <footer>BME 603/606 · Computational Methods for Biological Modeling &amp; Simulation · Fall 2026</footer>
+</body>
+</html>

@@ -123,10 +123,9 @@ export const grading = [
 export const assignments = [
   {
     title: "Assignment 1: Allometric Scaling",
-    releaseDate: "September 21, 2026",
-    description:
-      "Assignment materials and submission details will be posted here when released.",
-    url: "",
+    releaseDate: "September 25, 2026",
+    description: "Due: October 5, 2026",
+    url: "/assignments/assignment1.html",
   },
   {
     title: "Assignment 2: Directed Evolution",
