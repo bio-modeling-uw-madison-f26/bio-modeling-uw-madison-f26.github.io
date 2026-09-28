@@ -88,7 +88,14 @@ export const meetings: Meeting[] = [
       { label: "In-class Exercise (optional, extra credit)", url: "https://github.com/bio-modeling-uw-madison-f26/09-23-in-class-bonus" },
     ],
   },
-  { date: "Mon, Sep 28" },
+  {
+    date: "Mon, Sep 28",
+    topic: "ODEs and PageRank",
+    topicLinks: [
+      { label: "PDF", url: "https://drive.google.com/file/d/12qhomvYzppARdJQQUBuODtxVWRwk7ZJ4/view?usp=sharing" },
+      { label: "PPT", url: "https://docs.google.com/presentation/d/1hzg6AZbJjUseBYQp2ThMg74ZDKlo0icp/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
+    ],
+  },
   { date: "Wed, Sep 30" },
   { date: "Mon, Oct 5" },
   { date: "Wed, Oct 7" },
