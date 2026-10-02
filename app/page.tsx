@@ -4,11 +4,15 @@ import NavLinks, { BackToTop } from "./nav-links";
 const resources = (items?: { label: string; url: string }[]) =>
   items?.length ? (
     <div className="resource-links">
-      {items.map((item) => (
-        <a key={item.url} href={item.url}>
-          {item.label}
-        </a>
-      ))}
+      {items.map((item) =>
+        item.url ? (
+          <a key={item.label} href={item.url}>
+            {item.label}
+          </a>
+        ) : (
+          <span key={item.label} className="muted-label">{item.label}</span>
+        )
+      )}
     </div>
   ) : (
     <span className="placeholder">—</span>

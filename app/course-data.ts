@@ -106,6 +106,10 @@ export const meetings: Meeting[] = [
       { label: "PDF", url: "https://drive.google.com/file/d/1BLh8Ll1-QBKzGqsazKszaZMgULkP4MYp/view?usp=sharing" },
       { label: "PPT", url: "https://docs.google.com/presentation/d/1UK5HMtZlLPK91aaaXi6dHHVIrXY0y27c/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
     ],
+    activities: [
+      { label: "Quiz 1", url: "https://drive.google.com/file/d/1ZDfTsD9lE8eqcp4FSMnPRw59bOXqdfzy/view?usp=sharing" },
+      { label: "Quiz 1 Solution (coming soon)", url: "" },
+    ],
   },
   { date: "Mon, Oct 5" },
   { date: "Wed, Oct 7" },

@@ -242,6 +242,10 @@ tbody tr:hover {
 .placeholder {
   color: #98a4ad;
 }
+.muted-label {
+  color: var(--muted);
+  font-size: 13px;
+}
 .schedule-note {
   margin: 15px 0 0;
   color: var(--muted);
