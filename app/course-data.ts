@@ -111,7 +111,14 @@ export const meetings: Meeting[] = [
       { label: "Quiz 1 Solution", url: "https://drive.google.com/file/d/1598J1r0t9nDF5AXMkfzhJh3bEhSRJaZ_/view?usp=sharing" },
     ],
   },
-  { date: "Mon, Oct 5" },
+  {
+    date: "Mon, Oct 5",
+    topic: "Dynamic Programming (cont'd)",
+    topicLinks: [
+      { label: "PDF", url: "https://drive.google.com/file/d/149nLUgElcjvgw5wXlrT0Gsq8lAE0XBoR/view?usp=sharing" },
+      { label: "PPT", url: "https://docs.google.com/presentation/d/1tqj3YWPqFemPKLWTeE3nc4JLrYZm87RZ/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
+    ],
+  },
   { date: "Wed, Oct 7" },
   { date: "Mon, Oct 12" },
   { date: "Wed, Oct 14" },
@@ -146,12 +153,12 @@ export const assignments = [
     title: "Assignment 1: Allometric Scaling",
     releaseDate: "September 25, 2026",
     description: "",
-    dueDate: "Due Oct 5, 2026",
+    dueDate: "Due Oct 7, 2026",
     url: "/assignments/assignment1.html",
   },
   {
     title: "Assignment 2: Directed Evolution",
-    releaseDate: "October 5, 2026",
+    releaseDate: "October 8, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",
