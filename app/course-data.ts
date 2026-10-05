@@ -108,7 +108,7 @@ export const meetings: Meeting[] = [
     ],
     activities: [
       { label: "Quiz 1", url: "https://drive.google.com/file/d/1ZDfTsD9lE8eqcp4FSMnPRw59bOXqdfzy/view?usp=sharing" },
-      { label: "Quiz 1 Solution (coming soon)", url: "" },
+      { label: "Quiz 1 Solution", url: "https://drive.google.com/file/d/1598J1r0t9nDF5AXMkfzhJh3bEhSRJaZ_/view?usp=sharing" },
     ],
   },
   { date: "Mon, Oct 5" },
