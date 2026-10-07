@@ -122,7 +122,17 @@ export const meetings: Meeting[] = [
       { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/10-05-in-class/" },
     ],
   },
-  { date: "Wed, Oct 7" },
+  {
+    date: "Wed, Oct 7",
+    topic: "ODEs and PageRank",
+    topicLinks: [
+      { label: "PDF", url: "https://drive.google.com/file/d/1EpNaYBvNM70-Qy9t023uSjz3TCs7oMZA/view?usp=sharing" },
+      { label: "PPT", url: "https://docs.google.com/presentation/d/1r6knmsY4r5iac4qYxNQMx4xNjr7hlnUs/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
+    ],
+    notes: [
+      { label: "Freiburg RNA Tools", url: "https://rna.informatik.uni-freiburg.de/Teaching/index.jsp" },
+    ],
+  },
   { date: "Mon, Oct 12" },
   { date: "Wed, Oct 14" },
   { date: "Mon, Oct 19" },
