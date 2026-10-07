@@ -124,7 +124,7 @@ export const meetings: Meeting[] = [
   },
   {
     date: "Wed, Oct 7",
-    topic: "ODEs and PageRank",
+    topic: "Sequence Alignment",
     topicLinks: [
       { label: "PDF", url: "https://drive.google.com/file/d/1EpNaYBvNM70-Qy9t023uSjz3TCs7oMZA/view?usp=sharing" },
       { label: "PPT", url: "https://docs.google.com/presentation/d/1r6knmsY4r5iac4qYxNQMx4xNjr7hlnUs/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
