@@ -176,4 +176,11 @@ export const assignments = [
       "Assignment materials and submission details will be posted here when released.",
     url: "",
   },
+  {
+    title: "Assignment 3: Circadian Rhythms",
+    releaseDate: "October 27, 2026",
+    description:
+      "Assignment materials and submission details will be posted here when released.",
+    url: "",
+  },
 ];

@@ -75,8 +75,8 @@ export default function Home() {
             <strong>Colin Mikulski</strong>
             <a href="mailto:cmikulski@wisc.edu">cmikulski@wisc.edu</a>
             <span className="office-hours-heading">Office hours</span>
-            <small>Mon, 1–2 pm · TBD (see MS Teams)</small>
-            <small>Tue, 2–3 pm · TBD (see MS Teams)</small>
+            <small>Mon, 1–2 pm · Wendt 307</small>
+            <small>Tue, 2–3 pm · Wendt 410B</small>
           </div>
         </section>
 
@@ -268,9 +268,6 @@ export default function Home() {
         <div className="footer-inner">
           <span>BME 603/606 · Fall 2026</span>
           <span>© 2026 Dhananjay Bhaskar</span>
-          <span>
-            Last modified August 31, 2026 · <a href="/changelog">Changelog</a>
-          </span>
           <BackToTop />
         </div>
       </footer>
