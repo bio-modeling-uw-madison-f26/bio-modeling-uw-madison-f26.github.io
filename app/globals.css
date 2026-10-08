@@ -633,10 +633,15 @@ footer a {
 /* Full-row spanning rows (In Class Project Work, Project Presentations) */
 .full-row-topic {
   font-weight: 600;
-  font-style: italic;
   color: var(--teal);
   text-align: center;
 }
 tr.full-row {
   background: color-mix(in srgb, var(--teal) 6%, transparent);
+}
+tr.full-row.full-row-yellow {
+  background: #fefce8;
+}
+tr.full-row.full-row-yellow .full-row-topic {
+  color: #ca8a04;
 }

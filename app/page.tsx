@@ -134,6 +134,15 @@ export default function Home() {
               </svg>
               MS Teams
             </a>
+            <a
+              className="about-link"
+              href="https://classroom50.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span aria-hidden="true" style={{fontSize: "18px", lineHeight: 1, filter: "grayscale(1)"}}>📝</span>
+              Classroom 50
+            </a>
           </aside>
         </section>
 
@@ -166,7 +175,7 @@ export default function Home() {
               </thead>
               <tbody>
                 {meetings.map((m) => (
-                  <tr key={m.date} className={m.noClass ? "no-class" : m.fullRow ? "full-row" : ""}>
+                  <tr key={m.date} className={m.noClass ? "no-class" : m.fullRow ? (m.topic === "In Class Project Work" ? "full-row full-row-yellow" : "full-row") : ""}>
                     <th scope="row">{m.date}</th>
                     {m.fullRow ? (
                       <td colSpan={3} className="full-row-topic">{m.topic}</td>
