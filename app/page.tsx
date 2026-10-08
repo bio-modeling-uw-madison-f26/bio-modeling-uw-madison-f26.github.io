@@ -67,16 +67,16 @@ export default function Home() {
               dhananjay.bhaskar@wisc.edu
             </a>
             <span className="office-hours-heading">Office hours</span>
-            <small>Thu, 4–5 pm · ECB 2139</small>
-            <small>Fri, 10–11 am · ECB 2139</small>
+            <small>Thu, 4–5 pm · <a href="https://map.wisc.edu/s/ojejmozx">ECB 2139</a></small>
+            <small>Fri, 10–11 am · <a href="https://map.wisc.edu/s/ojejmozx">ECB 2139</a></small>
           </div>
           <div>
             <span>Teaching assistant</span>
             <strong>Colin Mikulski</strong>
             <a href="mailto:cmikulski@wisc.edu">cmikulski@wisc.edu</a>
             <span className="office-hours-heading">Office hours</span>
-            <small>Mon, 1–2 pm · Wendt 307</small>
-            <small>Tue, 2–3 pm · Wendt 410B</small>
+            <small>Mon, 1–2 pm · <a href="https://map.wisc.edu/s/8sn7nob3">Wendt 307</a></small>
+            <small>Tue, 2–3 pm · <a href="https://map.wisc.edu/s/8sn7nob3">Wendt 410B</a></small>
           </div>
         </section>
 
