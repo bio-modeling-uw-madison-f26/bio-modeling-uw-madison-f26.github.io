@@ -601,3 +601,42 @@ footer a {
   letter-spacing: 0.11em;
   text-transform: uppercase;
 }
+
+/* Contact and location links in course facts panel */
+.contact-link {
+  display: inline-block;
+  font-size: 14px;
+  padding: 6px 8px;
+  margin: -6px -8px;
+  color: #425362;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.contact-link:hover {
+  color: var(--red);
+}
+.location-link {
+  display: inline-block;
+  font-size: 13px;
+  padding: 5px 8px;
+  margin: -5px -8px;
+  color: #425362;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.location-link:hover {
+  color: var(--red);
+}
+
+/* Full-row spanning rows (In Class Project Work, Project Presentations) */
+.full-row-topic {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--teal);
+  text-align: center;
+}
+tr.full-row {
+  background: color-mix(in srgb, var(--teal) 6%, transparent);
+}

@@ -5,6 +5,7 @@ export type Meeting = {
   notes?: { label: string; url: string }[];
   activities?: { label: string; url: string }[];
   noClass?: boolean;
+  fullRow?: boolean;
 };
 
 // Edit this file to update the schedule. Add label/URL pairs for any links.
@@ -146,11 +147,11 @@ export const meetings: Meeting[] = [
   { date: "Mon, Nov 16" },
   { date: "Wed, Nov 18" },
   { date: "Mon, Nov 23" },
-  { date: "Wed, Nov 25", topic: "In Class Project Work" },
-  { date: "Mon, Nov 30", topic: "In Class Project Work" },
+  { date: "Wed, Nov 25", topic: "In Class Project Work", fullRow: true },
+  { date: "Mon, Nov 30", topic: "In Class Project Work", fullRow: true },
   { date: "Wed, Dec 2" },
   { date: "Mon, Dec 7" },
-  { date: "Wed, Dec 9", topic: "Project Presentations" },
+  { date: "Wed, Dec 9", topic: "Project Presentations", fullRow: true },
 ];
 
 export const grading = [

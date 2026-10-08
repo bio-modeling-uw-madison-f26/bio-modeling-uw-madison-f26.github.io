@@ -58,25 +58,25 @@ export default function Home() {
             <span>When &amp; where</span>
             <strong>Monday &amp; Wednesday</strong>
             <small>2:30–3:45 PM</small>
-            <strong className="course-facts-where">MECH ENGR 1152</strong>
+            <strong className="course-facts-where"><a href="https://map.wisc.edu/s/azthu0n" className="location-link">MECH ENGR 1152</a></strong>
           </div>
           <div>
             <span>Instructor</span>
             <strong>Prof. Dhananjay Bhaskar</strong>
-            <a href="mailto:dhananjay.bhaskar@wisc.edu">
+            <a href="mailto:dhananjay.bhaskar@wisc.edu" className="contact-link">
               dhananjay.bhaskar@wisc.edu
             </a>
             <span className="office-hours-heading">Office hours</span>
-            <small>Thu, 4–5 pm · <a href="https://map.wisc.edu/s/ojejmozx">ECB 2139</a></small>
-            <small>Fri, 10–11 am · <a href="https://map.wisc.edu/s/ojejmozx">ECB 2139</a></small>
+            <small>Thu, 4–5 pm · <a href="https://map.wisc.edu/s/ojejmozx" className="location-link">ECB 2139</a></small>
+            <small>Fri, 10–11 am · <a href="https://map.wisc.edu/s/ojejmozx" className="location-link">ECB 2139</a></small>
           </div>
           <div>
             <span>Teaching assistant</span>
             <strong>Colin Mikulski</strong>
-            <a href="mailto:cmikulski@wisc.edu">cmikulski@wisc.edu</a>
+            <a href="mailto:cmikulski@wisc.edu" className="contact-link">cmikulski@wisc.edu</a>
             <span className="office-hours-heading">Office hours</span>
-            <small>Mon, 1–2 pm · <a href="https://map.wisc.edu/s/8sn7nob3">Wendt 307</a></small>
-            <small>Tue, 2–3 pm · <a href="https://map.wisc.edu/s/8sn7nob3">Wendt 410B</a></small>
+            <small>Mon, 1–2 pm · <a href="https://map.wisc.edu/s/8sn7nob3" className="location-link">Wendt 307</a></small>
+            <small>Tue, 2–3 pm · <a href="https://map.wisc.edu/s/8sn7nob3" className="location-link">Wendt 410B</a></small>
           </div>
         </section>
 
@@ -166,28 +166,34 @@ export default function Home() {
               </thead>
               <tbody>
                 {meetings.map((m) => (
-                  <tr key={m.date} className={m.noClass ? "no-class" : ""}>
+                  <tr key={m.date} className={m.noClass ? "no-class" : m.fullRow ? "full-row" : ""}>
                     <th scope="row">{m.date}</th>
-                    <td>
-                      {m.topic ? (
-                        <>
-                          {m.topic}
-                          {m.topicLinks?.length ? (
-                            <div className="resource-links topic-links">
-                              {m.topicLinks.map((link) => (
-                                <a key={link.url} href={link.url} target="_blank" rel="noreferrer">
-                                  {link.label}
-                                </a>
-                              ))}
-                            </div>
-                          ) : null}
-                        </>
-                      ) : (
-                        <span className="placeholder">To be announced</span>
-                      )}
-                    </td>
-                    <td>{m.noClass ? "—" : resources(m.notes)}</td>
-                    <td>{m.noClass ? "—" : resources(m.activities)}</td>
+                    {m.fullRow ? (
+                      <td colSpan={3} className="full-row-topic">{m.topic}</td>
+                    ) : (
+                      <>
+                        <td>
+                          {m.topic ? (
+                            <>
+                              {m.topic}
+                              {m.topicLinks?.length ? (
+                                <div className="resource-links topic-links">
+                                  {m.topicLinks.map((link) => (
+                                    <a key={link.url} href={link.url} target="_blank" rel="noreferrer">
+                                      {link.label}
+                                    </a>
+                                  ))}
+                                </div>
+                              ) : null}
+                            </>
+                          ) : (
+                            <span className="placeholder">To be announced</span>
+                          )}
+                        </td>
+                        <td>{m.noClass ? "—" : resources(m.notes)}</td>
+                        <td>{m.noClass ? "—" : resources(m.activities)}</td>
+                      </>
+                    )}
                   </tr>
                 ))}
               </tbody>
