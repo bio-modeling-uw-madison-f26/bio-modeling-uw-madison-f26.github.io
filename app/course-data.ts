@@ -134,7 +134,7 @@ export const meetings: Meeting[] = [
       { label: "Freiburg RNA Tools", url: "https://rna.informatik.uni-freiburg.de/Teaching/index.jsp" },
     ],
   },
-  { date: "Mon, Oct 12", topic: "Directed Evolution", notes: [{ label: "Cobb et al., AIChE J., 2013", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4344831/" }, { label: "Wu et al., PNAS, 2019", url: "https://www.pnas.org/doi/10.1073/pnas.1901979116" }], activities: [{ label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/10-12-in-class" }] },
+  { date: "Mon, Oct 12", topic: "Directed Evolution", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1BmwMMg2Ve8resQnpKZJU_aX5Ql6P-9iA/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1fDNREJ1Y35P0Zt8ITfj13pWz7MSnGcLk/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], notes: [{ label: "Cobb et al., AIChE J., 2013", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4344831/" }, { label: "Wu et al., PNAS, 2019", url: "https://www.pnas.org/doi/10.1073/pnas.1901979116" }], activities: [{ label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/10-12-in-class" }] },
   { date: "Wed, Oct 14" },
   { date: "Mon, Oct 19" },
   { date: "Wed, Oct 21" },
