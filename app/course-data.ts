@@ -134,7 +134,7 @@ export const meetings: Meeting[] = [
       { label: "Freiburg RNA Tools", url: "https://rna.informatik.uni-freiburg.de/Teaching/index.jsp" },
     ],
   },
-  { date: "Mon, Oct 12", topic: "Directed Evolution", notes: [{ label: "Cobb et al., AIChE J., 2013", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4344831/" }, { label: "Wu et al., PNAS, 2019", url: "https://www.pnas.org/doi/10.1073/pnas.1901979116" }] },
+  { date: "Mon, Oct 12", topic: "Directed Evolution", notes: [{ label: "Cobb et al., AIChE J., 2013", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4344831/" }, { label: "Wu et al., PNAS, 2019", url: "https://www.pnas.org/doi/10.1073/pnas.1901979116" }], activities: [{ label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/10-12-in-class" }] },
   { date: "Wed, Oct 14" },
   { date: "Mon, Oct 19" },
   { date: "Wed, Oct 21" },
@@ -172,10 +172,10 @@ export const assignments = [
   },
   {
     title: "Assignment 2: Directed Evolution",
-    releaseDate: "October 8, 2026",
-    description:
-      "Assignment materials and submission details will be posted here when released.",
-    url: "",
+    releaseDate: "October 9, 2026",
+    description: "",
+    dueDate: "Due Oct 26, 2026",
+    url: "/assignments/assignment2.html",
   },
   {
     title: "Assignment 3: Circadian Rhythms",
