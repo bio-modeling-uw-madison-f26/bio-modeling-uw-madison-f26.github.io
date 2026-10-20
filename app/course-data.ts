@@ -119,9 +119,6 @@ export const meetings: Meeting[] = [
       { label: "PDF", url: "https://drive.google.com/file/d/149nLUgElcjvgw5wXlrT0Gsq8lAE0XBoR/view?usp=sharing" },
       { label: "PPT", url: "https://docs.google.com/presentation/d/1tqj3YWPqFemPKLWTeE3nc4JLrYZm87RZ/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
     ],
-    notes: [
-      { label: "LA Practice Problem", url: "https://drive.google.com/file/d/1xeBbnJcgOIaJ9HYLGfsyQzCfuyGW9itH/view?usp=sharing" },
-    ],
     activities: [
       { label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/10-05-in-class/" },
     ],
@@ -134,13 +131,14 @@ export const meetings: Meeting[] = [
       { label: "PPT", url: "https://docs.google.com/presentation/d/1r6knmsY4r5iac4qYxNQMx4xNjr7hlnUs/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" },
     ],
     notes: [
+      { label: "LA Practice Problem", url: "https://drive.google.com/file/d/1xeBbnJcgOIaJ9HYLGfsyQzCfuyGW9itH/view?usp=sharing" },
       { label: "Freiburg RNA Tools", url: "https://rna.informatik.uni-freiburg.de/Teaching/index.jsp" },
     ],
   },
   { date: "Mon, Oct 12", topic: "Directed Evolution", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1BmwMMg2Ve8resQnpKZJU_aX5Ql6P-9iA/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1fDNREJ1Y35P0Zt8ITfj13pWz7MSnGcLk/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], notes: [{ label: "Cobb et al., AIChE J., 2013", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4344831/" }, { label: "Wu et al., PNAS, 2019", url: "https://www.pnas.org/doi/10.1073/pnas.1901979116" }], activities: [{ label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/10-12-in-class" }] },
   { date: "Wed, Oct 14", topic: "Sequence-Structure-Function", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1Kor-3MlxaOQL6KOm--uWC77sirIVs6MV/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1xJAQZZUhQjkifRy6J1bxJ4SoaDGSYO3C/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], notes: [{ label: "CryoEM learning resources", url: "https://github.com/kuixu/awesome-cryoem" }] },
-  { date: "Mon, Oct 19", topic: "Intro to Neural Networks", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1KBYQINCip-HlBIsCYfFrk3XEx71iQV3O/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1ZnfdIwAlw6pVw4KbqjYMNUy1cpSDLPGe/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], activities: [{ label: "In-class Exercise", url: "https://colab.research.google.com/github/phlippe/uvadlc_notebooks/blob/master/docs/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.ipynb" }] },
-  { date: "Wed, Oct 21", topic: "Transformers and Protein Folding", notes: [{ label: "ColabFold Notebook", url: "https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb" }] },
+  { date: "Mon, Oct 19", topic: "Intro to Neural Networks", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1KBYQINCip-HlBIsCYfFrk3XEx71iQV3O/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1ZnfdIwAlw6pVw4KbqjYMNUy1cpSDLPGe/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], activities: [{ label: "In-class Exercise (not graded)", url: "https://colab.research.google.com/github/phlippe/uvadlc_notebooks/blob/master/docs/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.ipynb" }] },
+  { date: "Wed, Oct 21", topic: "Deep Networks and Protein Folding", notes: [{ label: "ColabFold Notebook", url: "https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb" }], activities: [{ label: "Quiz 1", url: "" }] },
   { date: "Mon, Oct 26" },
   { date: "Wed, Oct 28" },
   { date: "Mon, Nov 2" },
