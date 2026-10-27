@@ -259,22 +259,13 @@ export default function Home() {
             <article>
               <div>
                 <p className="release-date">Due · November 9, 2026</p>
-                <h3>Project Proposal</h3>
-                <p>
-                  Project proposals are due November 9. Form teams of 3&ndash;4
-                  students, preferably with at least one graduate student on
-                  each team. Each team should submit:
-                </p>
-                <ul>
-                  <li>A project title.</li>
-                  <li>
-                    Each team member&apos;s name, email address, and GitHub
-                    username.
-                  </li>
-                  <li>A 300-word project description.</li>
-                </ul>
+                <h3>
+                  <a href="/assignments/project-proposal.html">Project Proposal</a>
+                </h3>
               </div>
-              <span className="status">Coming soon</span>
+              <a className="status status-link" href="/assignments/project-proposal.html">
+                Due Nov 9, 2026
+              </a>
             </article>
           </div>
         </section>
