@@ -249,6 +249,36 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="final-project" className="content-section">
+          <div className="section-heading">
+            <div>
+              <h2>Final Project</h2>
+            </div>
+          </div>
+          <div className="assignment-list">
+            <article>
+              <div>
+                <p className="release-date">Due · November 9, 2026</p>
+                <h3>Project Proposal</h3>
+                <p>
+                  Project proposals are due November 9. Form teams of 3&ndash;4
+                  students, preferably with at least one graduate student on
+                  each team. Each team should submit:
+                </p>
+                <ul>
+                  <li>A project title.</li>
+                  <li>
+                    Each team member&apos;s name, email address, and GitHub
+                    username.
+                  </li>
+                  <li>A 300-word project description.</li>
+                </ul>
+              </div>
+              <span className="status">Coming soon</span>
+            </article>
+          </div>
+        </section>
+
         <section id="grading" className="content-section two-column">
           <div>
             <h2>Grading and Course Policies</h2>
