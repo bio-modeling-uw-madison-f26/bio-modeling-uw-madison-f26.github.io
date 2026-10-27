@@ -253,15 +253,15 @@ export default function Home() {
           <div>
             <h2>Grading and Course Policies</h2>
             <p className="muted">
-              Please refer to the course{" "}
+              In-class exercises are graded for completion and should be completed within one week of release. Multiple attempts are welcome, and you may continue working after class and show your completed work during office hours. You may earn bonus credit at any time by sharing your results from challenge exercises in the Show-and-Tell channel on MS Teams. The final project grade comprises the project proposal, presentation, and final report. Please refer to the{" "}
               <a
                 href="https://drive.google.com/file/d/1SLo5rkmpnM_xMmjId80x3-q261My6pC3/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
-                syllabus
+                course syllabus
               </a>
-              .
+              {" "}for full grading details and course policies.
             </p>
           </div>
           <dl className="grade-list">

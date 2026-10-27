@@ -156,7 +156,7 @@ export const meetings: Meeting[] = [
 ];
 
 export const grading = [
-  ["Homework assignments", "30%"],
+  ["Assignments", "30%"],
   ["In-class exercises", "30%"],
   ["Final project", "20%"],
   ["Quizzes", "10%"],
@@ -175,12 +175,12 @@ export const assignments = [
     title: "Assignment 2: Directed Evolution",
     releaseDate: "October 9, 2026",
     description: "",
-    dueDate: "Due Oct 26, 2026",
+    dueDate: "Due Oct 28, 2026",
     url: "/assignments/assignment2.html",
   },
   {
     title: "Assignment 3: Circadian Rhythms",
-    releaseDate: "October 27, 2026",
+    releaseDate: "October 29, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",
