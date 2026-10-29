@@ -145,8 +145,8 @@ export const meetings: Meeting[] = [
   { date: "Wed, Nov 4", topic: "Boolean Networks" },
   { date: "Mon, Nov 9", topic: "Bistability and Limit Cycles" },
   { date: "Wed, Nov 11", topic: "Stochastic Reaction Networks" },
-  { date: "Mon, Nov 16", topic: "Metabolic Network Modelling", notes: [{ label: "Orman et al. Crit Rev Biomed Eng., 2011", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3634616/" }] },
-  { date: "Wed, Nov 18", topic: "Agent-Based Modeling" },
+  { date: "Mon, Nov 16", topic: "Metabolic Network Modelling", notes: [{ label: "Orman et al., Crit Rev Biomed Eng., 2011", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3634616/" }] },
+  { date: "Wed, Nov 18", topic: "Agent-Based Modeling", activities: [{ label: "Quiz 3", url: "" }] },
   { date: "Mon, Nov 23", topic: "Cellular Potts Model" },
   { date: "Wed, Nov 25", topic: "In Class Project Work", fullRow: true },
   { date: "Mon, Nov 30", topic: "In Class Project Work", fullRow: true },
@@ -181,6 +181,13 @@ export const assignments = [
   {
     title: "Assignment 3: Circadian Rhythms",
     releaseDate: "October 29, 2026",
+    description:
+      "Assignment materials and submission details will be posted here when released.",
+    url: "",
+  },
+  {
+    title: "Assignment 4: Quorum Sensing",
+    releaseDate: "November 17, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",
