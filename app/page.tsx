@@ -258,7 +258,6 @@ export default function Home() {
           <div className="assignment-list">
             <article>
               <div>
-                <p className="release-date">Due · November 9, 2026</p>
                 <h3>
                   <a href="/assignments/project-proposal.html">Project Proposal</a>
                 </h3>
