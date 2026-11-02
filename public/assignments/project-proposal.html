@@ -53,11 +53,29 @@
   </div>
   <section>
     <article class="problem">
-      <p>Project proposals are due November 9. Form teams of 3&ndash;4 students, preferably with at least one graduate student on each team. Each team should submit:</p>
+      <p>Project proposals are due November 9. Projects must be completed in teams of 3&ndash;4 students. Each team must include at least one graduate student. Each team should submit:</p>
       <ul>
         <li>A project title.</li>
         <li>Each team member&rsquo;s name, email address, and GitHub username.</li>
         <li>A 300-word project description.</li>
+      </ul>
+      <p><a href="https://go.wisc.edu/kb31l6"><strong>Submit your project proposal</strong></a>.</p>
+    </article>
+  </section>
+  <section aria-labelledby="project-ideas">
+    <h2 id="project-ideas">Project ideas</h2>
+    <p>These ideas build on course topics and possible extensions into simulation and biological modeling. You may choose one, adapt it, or propose your own question. Keep the scope manageable by using a small dataset or a simple model.</p>
+    <article class="problem">
+      <ul>
+        <li><strong>PageRank for drug target prioritization.</strong> Apply personalized PageRank to a protein interaction or gene-disease network. Compare how different starting genes and restart probabilities change the rankings.</li>
+        <li><strong>Kinetic proofreading.</strong> Simulate a simple reaction network to study how extra proofreading steps affect the speed and accuracy of molecular recognition.</li>
+        <li><strong>Structure-guided directed evolution.</strong> Modify a genetic algorithm to favor mutations at selected protein positions or crossover between structural regions. Compare it with random mutation using a fixed fitness model.</li>
+        <li><strong>Comparing protein search algorithms.</strong> Compare a genetic algorithm, hill climbing, and simulated annealing on the same sequence fitness landscape. Track best fitness and sequence diversity under the same evaluation budget.</li>
+        <li><strong>Predicting sequence fitness.</strong> Train a small neural network to predict protein fitness from sequence. Compare it with a linear model on held-out sequences.</li>
+        <li><strong>Sequence alignment with affine gap penalties.</strong> Extend global or local alignment to distinguish opening a gap from extending one. Test how this changes alignments of sequences containing long insertions or deletions.</li>
+        <li><strong>A small pangenome graph.</strong> Build a graph representing shared regions and sequence variants in a few short related DNA sequences. Compare aligning a new sequence to this graph with aligning it to a single reference.</li>
+        <li><strong>Biological oscillations.</strong> Simulate a simple circadian rhythm or gene regulation model with ODEs. Explore how changing parameters affects the period and amplitude of oscillations.</li>
+        <li><strong>Noise in gene expression.</strong> Compare a stochastic simulation of gene expression with an ODE model. Study how molecule counts affect variability between repeated simulations.</li>
       </ul>
     </article>
   </section>
