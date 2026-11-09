@@ -142,8 +142,8 @@ export const meetings: Meeting[] = [
   { date: "Mon, Oct 26", topic: "RNNs and Transformers", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1VTOouTMYKfjy8bR00dJ-YVOBhdk7yLOk/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1BqO1KPgx8wCFksOk5CZZSgtwQT1BqUeu/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], notes: [{ label: "ColabFold Notebook", url: "https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb" }] },
   { date: "Wed, Oct 28", topic: "Modeling Chemical Reactions", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1zK0JseL6J7KWZQxD1aGpAwsMV6MSOFEo/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1gwwbVdarZqm78C7ETak0PLdmVcpGUIoI/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }] },
   { date: "Mon, Nov 2", topic: "Michaelis-Menten Enzyme Kinetics", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1ZYsLqd-ug_IcvPj0gueM2opVSUe5EZc7/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1NCRz5X2GtbkHEYB8hULI2xkX5Q-WXvVs/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], activities: [{ label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/10-28-in-class" }] },
-  { date: "Wed, Nov 4", topic: "Boolean Networks", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1rBkYGu3Xpvg5YxpOF3_o-pqc6JhqNpf7/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1T8Lg5GafX7KT8hUuayVLVwzNFYQ4TXfT/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], notes: [{ label: "GINsim Models Database", url: "https://ginsim.github.io/models/" }] },
-  { date: "Mon, Nov 9", topic: "Bistability and Limit Cycles" },
+  { date: "Wed, Nov 4", topic: "Boolean Networks", topicLinks: [{ label: "PDF", url: "https://drive.google.com/file/d/1rBkYGu3Xpvg5YxpOF3_o-pqc6JhqNpf7/view?usp=sharing" }, { label: "PPT", url: "https://docs.google.com/presentation/d/1T8Lg5GafX7KT8hUuayVLVwzNFYQ4TXfT/edit?usp=sharing&ouid=116154183097190571698&rtpof=true&sd=true" }], notes: [{ label: "GINsim Models Database", url: "https://ginsim.github.io/models/" }, { label: "Xiao, Curr Genomics., 2009", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2808677/" }, { label: "Schwab et al., Comput. Struct. Biotechnol. J., 2020", url: "https://doi.org/10.1016/j.csbj.2020.03.001" }] },
+  { date: "Mon, Nov 9", topic: "Bistability and Limit Cycles", activities: [{ label: "In-class Exercise", url: "https://github.com/bio-modeling-uw-madison-f26/11-09-in-class" }] },
   { date: "Wed, Nov 11", topic: "Stochastic Reaction Networks" },
   { date: "Mon, Nov 16", topic: "Metabolic Network Modelling", notes: [{ label: "Orman et al., Crit Rev Biomed Eng., 2011", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3634616/" }] },
   { date: "Wed, Nov 18", topic: "Agent-Based Modeling", activities: [{ label: "Quiz 3", url: "" }] },
@@ -151,7 +151,7 @@ export const meetings: Meeting[] = [
   { date: "Wed, Nov 25", topic: "In Class Project Work", fullRow: true },
   { date: "Mon, Nov 30", topic: "In Class Project Work", fullRow: true },
   { date: "Wed, Dec 2", topic: "Active Network Models" },
-  { date: "Mon, Dec 7", topic: "TBD" },
+  { date: "Mon, Dec 7", topic: "TBD", activities: [{ label: "Quiz 4", url: "" }] },
   { date: "Wed, Dec 9", topic: "Project Presentations", fullRow: true },
 ];
 
@@ -180,14 +180,14 @@ export const assignments = [
   },
   {
     title: "Assignment 3: Circadian Rhythms",
-    releaseDate: "October 29, 2026",
+    releaseDate: "November 8, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",
   },
   {
     title: "Assignment 4: Quorum Sensing",
-    releaseDate: "November 17, 2026",
+    releaseDate: "November 23, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",
