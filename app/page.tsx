@@ -266,6 +266,18 @@ export default function Home() {
                 Due Nov 9, 2026
               </a>
             </article>
+            <article>
+              <div>
+                <h3>Team Presentation</h3>
+              </div>
+              <span className="status">Coming soon</span>
+            </article>
+            <article>
+              <div>
+                <h3>Final Report</h3>
+              </div>
+              <span className="status">Coming soon</span>
+            </article>
           </div>
         </section>
 
