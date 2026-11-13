@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="BME 603/606 Assignment 3: The Mammalian Circadian Clock"><title>Assignment 3: The Mammalian Circadian Clock | BME 603/606</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&amp;family=Red+Hat+Text:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><style>
+    :root { --navy:#073b68; --navy-dark:#052946; --teal:#1e9a98; --red:#df001b; --ink:#17222d; --muted:#60707d; --paper:#fbfcfc; --line:#d9e2e7; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.68 "Red Hat Text",system-ui,sans-serif; }
+    h1,h2,h3 { font-family:"Red Hat Display",system-ui,sans-serif; color:var(--navy-dark); line-height:1.18; }
+    h1 { font-size:clamp(38px,6vw,64px); letter-spacing:-.035em; margin:0 0 18px; }
+    h2 { font-size:32px; margin:0 0 14px; }
+    h3 { font-size:26px; margin:0 0 15px; }
+    a { color:var(--navy); text-underline-offset:3px; }
+    a:hover { color:var(--red); }
+    a:focus-visible { outline:3px solid var(--teal); outline-offset:3px; }
+    header { border-bottom:1px solid var(--line); background:#fff; }
+    .header-inner { max-width:1040px; padding:17px 26px; margin:auto; display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-family:"Red Hat Display",system-ui,sans-serif; font-weight:700; font-size:19px; color:var(--navy-dark); text-decoration:none; }
+    .back { font-size:14px; font-weight:600; }
+    main { max-width:1040px; padding:0 26px 88px; margin:auto; }
+    .hero { padding:64px 0 48px; border-bottom:5px solid var(--navy); }
+    .eyebrow { color:var(--red); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.12em; margin:0 0 16px; }
+    .lede { color:#526370; font-size:19px; max-width:780px; margin:0; }
+    section { padding:35px 0 10px; scroll-margin-top:24px; }
+    p { margin:0 0 14px; }
+    .intro { max-width:100%; }
+    .problem { background:white; border:1px solid var(--line); padding:26px 30px; margin:25px 0; break-inside:avoid; }
+    .problem ol { padding-left:1.55em; margin:12px 0; }
+    .problem li { padding-left:.25em; margin:10px 0; }
+    .formula { background:#f2f6f8; border:1px solid var(--line); padding:12px 16px; margin:15px 0; overflow-x:auto; font-size:1.06rem; white-space:nowrap; }
+    .table-wrap { max-width:680px; overflow-x:auto; border:1px solid var(--line); margin:17px auto; }
+    table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+    th,td { padding:9px 15px; border-bottom:1px solid var(--line); text-align:right; }
+    th:first-child,td:first-child { text-align:left; }
+    thead { background:var(--navy); color:white; }
+    tbody tr:nth-child(even) { background:#f5fafa; }
+    tbody tr:last-child td { border-bottom:0; }
+    .grad { border-top:5px solid var(--navy); margin-top:34px; }
+    .grad .problem { border-left:4px solid var(--navy); }
+    .grad-label { font-family:"Red Hat Display",system-ui,sans-serif; font-weight:700; font-size:22px; color:var(--navy-dark); margin:0 0 10px; }
+    .hint { border-left:4px solid var(--teal); background:#edf8f7; padding:13px 17px; margin:17px 0; }
+    .hint p:last-child { margin-bottom:0; }
+    footer { border-top:1px solid var(--line); padding:25px; text-align:center; font-size:13px; color:var(--muted); }
+    @media(max-width:600px) { .hero{padding:46px 0 35px} .problem{padding:20px} h2{font-size:28px} h3{font-size:22px} }
+    @media print { body{background:white} main{padding-bottom:10px} .back{display:none} a{color:inherit} .problem{break-inside:avoid} .hero{padding-top:28px} }
+  
+    pre { background:#f2f6f8; border:1px solid var(--line); padding:18px 20px; overflow-x:auto; line-height:1.5; font-size:13px; tab-size:4; margin:18px 0; }
+    code { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.9em; }
+    pre code { font-size:inherit; }
+    .steps { display:flex; flex-wrap:wrap; gap:10px; padding:18px 0 0; }
+    .steps a { background:white; border:1px solid var(--line); padding:6px 13px; font-size:14px; text-decoration:none; }
+    .table-wrap { max-width:100%; }
+    .settings th,.settings td { text-align:left; }
+    h4 { font-size:18px; color:var(--navy-dark); margin:22px 0 10px; }
+    .caption { color:var(--muted); font-size:14px; }
+    .references { font-size:14px; }
+    @media print { pre { white-space:pre-wrap; overflow-wrap:anywhere; font-size:10px; } .problem { break-inside:auto; } h2,h3,h4 { break-after:avoid; } .steps { display:none; } }
+</style></head><body><header><div class="header-inner"><a class="brand" href="https://bio-modeling-uw-madison-f26.github.io/">BME 603/606</a><a class="back" href="https://bio-modeling-uw-madison-f26.github.io/">Course Website</a></div></header><main>
+<div class="hero">
+<p class="eyebrow">Computational Methods for Biological Modeling &amp; Simulation · Fall 2026</p>
+<h1>Assignment 3:<br>The Mammalian Circadian Clock</h1>
+<p class="lede">How does a cell keep time, and what happens to its clock when a gene is knocked out?</p>
+<nav class="steps" aria-label="Assignment sections">
+<a href="#before">Before you begin</a><a href="#model">ODE model</a><a href="#wild-type">Wild-type clock</a><a href="#knockouts">Gene knockouts</a><a href="#graduate">Graduate component</a><a href="#reading">Further reading</a><a href="#submission">Submission</a>
+</nav></div>
+<section id="before"><h2>Before you begin</h2>
+<p>Individual mammalian cells can generate daily rhythms through feedback among clock genes and their protein products. In this assignment, you will reproduce the wild-type mouse circadian clock simulated by Mirsky et al. (2009), then use the same model to test which gene knockouts change or abolish its rhythm.</p>
+<ul>
+<li>Download and read the <a href="https://doi.org/10.1073/pnas.0904837106">paper</a>. Focus on the regulatory network in Figure 1, the wild-type time courses in Figure 2, and the knockout analysis.</li>
+<li>Use the <a href="https://www.pnas.org/doi/suppl/10.1073/pnas.0904837106/suppl_file/appendix_pdf.pdf">Appendix</a> for the 21 differential equations and the state definitions.</li>
+<li>Use the <a href="https://www.pnas.org/doi/suppl/10.1073/pnas.0904837106/suppl_file/0904837106si.pdf">Supporting Information</a> for the parameter values (Table S1) and knockout conditions (Table S3). Figures S1 and S2 show selected knockout time courses.</li>
+</ul></section>
+<section id="model"><h2>The ODE model</h2>
+<p>The state vector contains eight mRNA concentrations, eight protein concentrations, and five protein complex concentrations. Time is measured in hours and concentrations are in nM. In the model, CLK/BMAL1 activates transcription of several clock genes. PER and CRY proteins form complexes that repress transcription at several of those genes. RORc and REV-ERBα provide additional regulation.</p>
+</section>
+<section id="wild-type"><h2>Wild-type clock</h2>
+<article class="problem"><h3>Problem 1: simulate the wild-type clock</h3>
+<p>Implement all 21 differential equations in Python using the parameter values in Table S1. Choose a nonnegative initial state and integrate the wild-type system.</p>
+<p>Plot the eight mRNA and corresponding protein time courses in eight panels, following Figure 2. Use blue for mRNA and red for protein. Label time in hours and concentration in nM. Use separate, labeled concentration axes within a panel when the two traces are on very different scales. Show at least two complete cycles after the initial transient.</p>
+</article>
+<article class="problem"><h3>Problem 2: compare mRNA and protein peak times</h3>
+<p>Pick two mRNA–protein pairs and report the time lag from an mRNA peak to the corresponding protein peak for each pair. Compare your results with Figure 2 in the paper.</p>
+</article>
+</section>
+<section id="knockouts"><h2>Gene knockouts</h2>
+<p>In this model, a knockout turns off transcription of the targeted gene. For each mutant, start from a fresh copy of the wild-type parameter set and set every transcription-rate coefficient listed for that mutant in Table S3 to zero. Keep the full system of equations so that any initially present target mRNA, protein, or complexes can evolve according to the model.</p>
+<article class="problem"><h3>Problem 3: simulate the single and double knockouts</h3>
+<ol type="a">
+<li>Simulate all nine cases in Table S3. Include the seven single knockouts (<em>Cry1</em>, <em>Cry2</em>, <em>Per1</em>, <em>Per2</em>, <em>Bmal1</em>, <em>Rev-erbα</em>, and <em>Rorc</em>) and the two double knockouts (<em>Cry1/Cry2</em> and <em>Per1/Per2</em>). List the coefficients you set to zero for each run. Plot the knockout time courses for at least two mRNAs whose genes are intact in that knockout. Include <em>Per2</em> mRNA as one of the two whenever <em>Per2</em> is intact. Show at least two cycles for every rhythmic knockout, including the slowest case. Include a plot of the initial transient if it helps distinguish damped oscillations from sustained oscillations.</li>
+<li>Make a summary table with one row per mutant. Classify each as rhythmic or arrhythmic, report the period for sustained rhythms, and describe changes in amplitude or late-time concentration relative to wild type. Explain the criterion you used to distinguish sustained rhythms from oscillations that decay, and extend the simulation if the classification is unclear. Compare each result with the simulated and experimental phenotypes in Table S3.</li>
+</ol>
+</article>
+</section>
+<section id="graduate" class="grad">
+<h2 class="grad-label">Graduate students only</h2>
+<article class="problem"><h3>Problem 4: explain what changes in the clock</h3>
+<ol type="a">
+<li>For each mutant, use Figure 1 and the equations to identify one regulatory interaction changed by the knockout. Connect the loss of a protein or complex to a transcription term in the model and explain how that change could contribute to the time course you observed.</li>
+<li>Compare the <em>Cry1</em> and <em>Cry2</em> knockouts. Identify which PER/CRY complexes each knockout removes and which remain. Use the <em>Per2</em> transcription equation and the discussion accompanying Figure 4 to explain why these knockouts can produce different outcomes. Compare the <em>Per2</em> mRNA amplitude in wild type and the <em>Cry2</em> knockout.</li>
+<li>For the <em>Rev-erbα</em> and <em>Rorc</em> knockouts, identify a feedback path that remains intact. Explain how the model can retain a rhythm even when a regulatory interaction is lost.</li>
+</ol>
+</article></section>
+<section id="reading" class="references">
+<h2>Optional further reading</h2>
+<p><a href="https://doi.org/10.1073/pnas.1132112100">Modeling the mammalian circadian clock</a> presents a more detailed computational model and explores how molecular mechanisms can contribute to circadian rhythm disorders. This article is for your own exploration. No assignment questions or submission items are based on it.</p>
+</section>
+<section id="submission"><h2>Submission Instructions</h2>
+<p>Submission details are coming soon. Submit either a Jupyter notebook or a PDF. In either format, include all code, all outputs from the code (including figures and tables), and written answers labeled by problem number and letter. If you submit a notebook, run it before submitting so the outputs are visible when it is opened.</p>
+</section></main>
+<footer>BME 603/606 · Computational Methods for Biological Modeling &amp; Simulation · Fall 2026</footer></body></html>

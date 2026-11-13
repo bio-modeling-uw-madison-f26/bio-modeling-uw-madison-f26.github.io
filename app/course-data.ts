@@ -183,11 +183,12 @@ export const assignments = [
     releaseDate: "November 8, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
-    url: "",
+    dueDate: "Due Nov 24, 2026",
+    url: "/assignments/assignment3.html",
   },
   {
     title: "Assignment 4: Quorum Sensing",
-    releaseDate: "November 23, 2026",
+    releaseDate: "November 25, 2026",
     description:
       "Assignment materials and submission details will be posted here when released.",
     url: "",
