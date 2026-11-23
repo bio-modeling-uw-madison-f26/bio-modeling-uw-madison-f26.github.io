@@ -150,7 +150,7 @@ export const meetings: Meeting[] = [
   { date: "Mon, Nov 23", topic: "Cellular Potts Model", notes: [{ label: "Getting Started with Morpheus", url: "https://morpheus.gitlab.io/courses/getting-started/" }], activities: [{ label: "In-class Exercise", url: "https://morpheus.gitlab.io/model/m0021/" }] },
   { date: "Wed, Nov 25", topic: "In Class Project Work", fullRow: true },
   { date: "Mon, Nov 30", topic: "In Class Project Work", fullRow: true },
-  { date: "Wed, Dec 2", topic: "Cellular Potts Model" },
+  { date: "Wed, Dec 2", topic: "Epidemic Models" },
   { date: "Mon, Dec 7", topic: "Active Network Models", activities: [{ label: "Quiz 4", url: "" }] },
   { date: "Wed, Dec 9", topic: "Project Presentations", fullRow: true },
 ];
